@@ -7,9 +7,9 @@ export function Header({isOpen, setIsOpen}) {
           <p className="header__message">
             ОБЯЗАТЕЛЬНО следовать инструкции при использовании калькулятора.
           </p>
-          <a href="/" className="manual" onClick={() => setIsOpen(!isOpen)}>
+          <p className="manual" onClick={() => setIsOpen(!isOpen)}>
             Инструкция
-          </a>
+          </p>
         </div>
     )
 }

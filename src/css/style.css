@@ -79,11 +79,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .container {
   font-size: 20px;
   width: 60em;
   margin: 0 auto;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   padding: 2em 0;
 }
 
@@ -103,12 +106,46 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-size: 0.8em;
   text-decoration: underline;
+  cursor: pointer;
+}
+.manual:hover {
+  text-decoration: none;
 }
 
 .lmao {
   padding: 40px;
   font-size: 20px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+.lol {
+  padding: 10px;
+  background: #d5d5d5;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.lol:hover {
+  background: #a4a4a4;
+}
+
+.kek {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .box {
