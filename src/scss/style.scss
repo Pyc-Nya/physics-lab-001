@@ -11,6 +11,10 @@
 body {
 }
 
+a {
+    // cursor: pointer;
+}
+
 .container {
     font-size: 20px;
     width: pxToEm(1200px);
@@ -37,6 +41,12 @@ body {
     text-transform: uppercase;
     font-size: pxToEm(16px);
     text-decoration: underline;
+}
+
+.lmao {
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .box {

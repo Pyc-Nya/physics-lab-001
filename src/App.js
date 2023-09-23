@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Header } from "./Heder";
+import { Header } from "./Header";
 import InitData from "./InitData";
 import Table from "./Table";
 
@@ -34,7 +34,7 @@ function Output({result}) {
   }
 }
 
-export default function Body() {
+function Body({isOpen, setIsOpen}) {
   const [varCounter, setVarCounter] = useState('');
   const [expCounter, setExpCounter] = useState('');
   const [formula, setFormula] = useState('');
@@ -43,7 +43,7 @@ export default function Body() {
   return (
     <>
       <div className="container">
-        <Header />
+        <Header setIsOpen={setIsOpen} isOpen={isOpen} />
         <div className="box">
           <div className="box__left box-left box__item">
             <InitData 
@@ -70,4 +70,20 @@ export default function Body() {
       </div>
     </>
   );
+}
+
+function Manual({setIsOpen, isOpen}) {
+  return (
+    <div className="lmao" onClick={() => setIsOpen(!isOpen)}>В соответствующие инпуты (окошко ввода) вводите соответствующие значения, в противном случае калькулятор
+    работать не будет. Если вам внутри инпута выдало NaN, то обновите страницу</div>
+  )
+}
+
+export default function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  if (isOpen) {
+    return <Manual setIsOpen={setIsOpen} isOpen={isOpen} />
+  } else {
+    return <Body setIsOpen={setIsOpen} isOpen={isOpen} />
+  }
 }
