@@ -40,7 +40,4 @@ export default function getResult({data, expCounter, formula}) {
     "sumOfDiffsSumms": sumOfDiffsSumms, 
     "deltaAverageX": deltaAverageX,
   }
-  
-
-
 }

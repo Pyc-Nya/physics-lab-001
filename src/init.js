@@ -7,7 +7,7 @@ export default function getResults({data, formula, expCounter}) {
   for (let i = 0; i < +expCounter; i++) {
     let temp = [];
     for (let key of Object.keys(data)) {
-      temp.push(data[key][i]);
+      temp.push(+data[key][i]);
     }
     results.push(foo(...temp));
   }
