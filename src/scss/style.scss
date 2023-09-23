@@ -39,6 +39,7 @@ body {
     font-size: pxToEm(16px);
     text-decoration: underline;
     cursor: pointer;
+    display: inline-block;
 
     &:hover {
         text-decoration: none;

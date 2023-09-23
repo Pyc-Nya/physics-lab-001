@@ -107,6 +107,7 @@ body {
   font-size: 0.8em;
   text-decoration: underline;
   cursor: pointer;
+  display: inline-block;
 }
 .manual:hover {
   text-decoration: none;
