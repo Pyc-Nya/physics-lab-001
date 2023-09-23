@@ -109,7 +109,7 @@ export default function Table({varCounter, expCounter, formula, setFormula, resu
       }
       for (let i = 0; i < varCounter; i++) {
         for (let j = 1; j < +expCounter + 1; j++) {
-          newData[arr[i][0]][j-1] = arr[i][j];
+          newData[arr[i][0]][j-1] = +arr[i][j];
         }
       }
       for (let i = 0; i < varCounter; i++) {
@@ -132,7 +132,7 @@ export default function Table({varCounter, expCounter, formula, setFormula, resu
       }
       for (let i = 0; i < varCounter; i++) {
         for (let j = 1; j < +expCounter+1; j++) {
-          newData[arr[0][i]][j-1] = arr[j][i];
+          newData[arr[0][i]][j-1] = +arr[j][i];
         }
       }
       for (let i = 0; i < varCounter; i++) {
