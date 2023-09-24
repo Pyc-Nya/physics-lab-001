@@ -3,9 +3,6 @@ import getResult from "./getResult";
 
 const teta = 'Θ';
 
-
-
-
 function Formula({formula, setFormula, data, setResult, expCounter}) {
   useEffect(() => {
     let output;
