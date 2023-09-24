@@ -13,7 +13,7 @@ function Output({result}) {
     }
     let results = [];
     for (let i = 0; i < result["results"].length; i++) {
-      results.push(<div key={i} className="list">{result["results"][i]}</div>)
+      results.push(<div key={i} style={{paddingLeft: "1.5em", marginBottom: "0.3em"}}>{i+1}. {result["results"][i]}</div>)
     }
     return (
       <div>
