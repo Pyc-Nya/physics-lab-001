@@ -18,11 +18,11 @@ function Output({result}) {
     return (
       <div>
         <p style={{fontWeight: "700", marginBottom: "15px"}}>Результаты вычислений: </p>
-        <div className="box-right__output">Результаты экспериментов: <div style={{paddingTop: "5px"}}>{results}</div></div>
+        <div className="box-right__output">Результаты экспериментов: <div style={{paddingTop: "7px"}}>{results}</div></div>
         <div className="box-right__output">Среднее значение: {result["average"]}</div>
         <div className="box-right__output">СКО: {result["Sx"]}</div>
         <div className="box-right__output">△X: {result["deltaX"]}</div>
-        <div className="box-right__output">Сумма модулей частных производных / количество экспериментов: <div style={{paddingTop: "5px"}}>{summsOfAbsOfDiffs}</div></div>
+        <div className="box-right__output">Сумма модулей частных производных / количество экспериментов: <div style={{paddingTop: "7px"}}>{summsOfAbsOfDiffs}</div></div>
         <div className="box-right__output">Сумма от производных * приборная погрешность: {result["sumOfDiffsSumms"]}</div>
         <div className="box-right__output">среднее △X: {result["deltaAverageX"]}</div>
   
