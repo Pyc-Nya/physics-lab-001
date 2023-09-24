@@ -271,6 +271,10 @@ input:focus {
   }
 }
 @media screen and (max-width: 1000px) {
+  .table-data td input {
+    max-width: 3em;
+    max-height: 1.5em;
+  }
   .container {
     width: calc(100% - 5em);
   }

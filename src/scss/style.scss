@@ -221,6 +221,14 @@ input {
 }
 
 @media screen and (max-width: 1000px) {
+    .table-data {
+        & td {
+            & input {
+                max-width: pxToEm(60px);
+                max-height: pxToEm(30px);
+            }
+        }
+    }
     .container {
         width: calc(100% - pxToEm(100px));
     }
@@ -259,4 +267,5 @@ input {
     .container {
         font-size: 14px;
     }
+
 }
