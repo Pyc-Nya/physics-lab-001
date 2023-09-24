@@ -170,7 +170,7 @@ body {
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  min-width: 20em;
+  min-width: 15em;
 }
 
 .box-left__init-data {
