@@ -91,6 +91,7 @@ body {
 
     &__right {
         flex: 3;
+        min-width: pxToEm(400px);
         // background: #36c473;
     }
 }
