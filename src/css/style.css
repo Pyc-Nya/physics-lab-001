@@ -125,6 +125,7 @@ body {
   background: #d5d5d5;
   border: 1px solid #000;
   border-radius: 5px;
+  text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
